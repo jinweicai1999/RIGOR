@@ -36,7 +36,8 @@ analysis, batch prioritization of candidate gene sets, and prediction for regula
 
 The frozen evidence snapshot, the populated prompts, all 200 complete model outputs, the
 800-response provider manifest and per-file SHA-256 hashes are distributed with the revision's
-Supplementary Data.
+Supplementary Data and are also attached to the [Releases](../../releases) page of this repository
+(`Data_archive_200runs.zip`).
 
 ## Model configuration
 
@@ -54,4 +55,4 @@ function and breeding relevance. *(citation to be completed on publication)*
 
 ## License
 
-*(to be decided — see the note in the accompanying message)*
+MIT — see [LICENSE](LICENSE).
