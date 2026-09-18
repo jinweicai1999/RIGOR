@@ -42,7 +42,7 @@ Supplementary Data and are also attached to the [Releases](../../releases) page 
 ## Model configuration
 
 Production runs used **deepseek-flash** (temperature 0.1, thinking mode disabled,
-`max_tokens = 4000) through an OpenAI-compatible endpoint. The provider updated this model's API
+`max_tokens = 4000`) through an OpenAI-compatible endpoint. The provider updated this model's API
 alias during the revision period, so the August 2026 stability audit files record the identifier
 returned at that time (`deepseek-v4-flash`) while later benchmark runs returned `deepseek-flash`;
 both refer to the same production model.
