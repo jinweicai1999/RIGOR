@@ -32,7 +32,9 @@ analysis, batch prioritization of candidate gene sets, and prediction for regula
 | `supplementary_data/Supplementary_Data_S1.csv` | 200-run stability audit (run status, generation time, output length, provider-returned model, response IDs, cited and unsupported PMIDs, output SHA-256) |
 | `supplementary_data/Supplementary_Data_S2.zip` | Drought and plasma-membrane batch-validation statistics: `primary_tests.csv`, `scenario_score_profile.csv`, `plasma_membrane_gene_set.csv`, `mapping_audit.json`, `data_quality_audit.csv` |
 | `supplementary_data/Supplementary_Data_S3.zip` | 26-gene evidence-layer ablation: `condition_summary.csv`, `paired_ablation_comparisons.csv`, `paired_ablation_comparisons_no_M5.csv`, `integrity_audit.csv` |
-| `supplementary_data/26_Gene_Benchmark_Registry.xlsx` | 26-gene time-delayed benchmark registry: overview, selected cohort, ground-truth references, screening log, candidate pool, source versions, leakage audit |
+| `supplementary_data/26_Gene_Benchmark_Registry_1_Selected26.csv` | 26-gene time-delayed benchmark: the locked cohort, with RAP ID, class, earliest public date, PMID/DOI, experimental validation, gold-standard status and selection basis |
+| `supplementary_data/26_Gene_Benchmark_Registry_2_ScreeningLog.csv` | Full screening log (225 PubMed records) with dates, detected genes, experimental terms, screen score, inclusion/exclusion decision and reason |
+| `supplementary_data/26_Gene_Benchmark_Registry_3_LeakageAudit.csv` | Target-specific pre-cutoff leakage audit for the 26 benchmark genes, with the exposure check and confidence for each |
 
 The frozen evidence snapshot, the populated prompts, all 200 complete model outputs, the
 800-response provider manifest and per-file SHA-256 hashes are distributed with the revision's
