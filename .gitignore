@@ -1,0 +1,20 @@
+# secrets and local configuration
+.env
+.env.*
+*.key
+secrets.json
+config.local.*
+credentials*
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# local data / heavy artefacts
+data/cache/
+*.log
+.DS_Store
