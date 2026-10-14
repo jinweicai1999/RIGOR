@@ -49,10 +49,16 @@ the complete inference outputs.
 | `supplementary_data/Supplementary_Data_S2.zip` | Drought and plasma-membrane batch-validation statistics: `primary_tests.csv`, `scenario_score_profile.csv`, `plasma_membrane_gene_set.csv`, `mapping_audit.json`, `data_quality_audit.csv` |
 | `supplementary_data/Supplementary_Data_S3.zip` | 26-gene evidence-layer ablation: `condition_summary.csv`, `paired_ablation_comparisons.csv`, `paired_ablation_comparisons_no_M5.csv`, `integrity_audit.csv` |
 | `supplementary_data/26_Gene_Benchmark_Registry.xlsx` | 26-gene time-delayed benchmark registry, three sheets: **Selected 26** (the locked cohort, with RAP ID, class, earliest public date, PMID/DOI, experimental validation, gold-standard status and selection basis), **Screening Log** (all 225 screened PubMed records with dates, detected genes, experimental terms, screen score, inclusion/exclusion decision and reason) and **Leakage Audit** (target-specific pre-cutoff exposure check and confidence for each benchmark gene) |
+| `supplementary_data/API_200run_800calls_raw_model_time_parameters.csv` | One row per API call in the C2DP40 200-run stability experiment: provider-returned response ID, model and creation timestamp; client start/completion timestamps; explicitly sent settings; token usage; and prompt/output hashes |
+| `supplementary_data/API_200run_800calls_summary.json` | Completeness checks for the 800-call table |
 
 The frozen evidence snapshot, populated prompts, all 200 complete model outputs, the
-800-response provider manifest, and per-file SHA-256 hashes are retained in the separate
+raw 800 API-response records, and per-file SHA-256 hashes are retained in the separate
 `Data_archive_200runs.zip` revision archive. This archive is not part of the source tree above.
+The included table can be regenerated with `scripts/flatten_200run_api_audit.py` from that
+archive. It covers the 200-run stability experiment only, not every API call across the
+26-gene benchmark or ablation analyses. Parameters not explicitly recorded in the archive
+cannot be reconstructed from provider defaults.
 
 ## Model configuration
 

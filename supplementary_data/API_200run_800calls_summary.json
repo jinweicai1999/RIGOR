@@ -1,0 +1,35 @@
+{
+  "archive": "Data_archive_200runs.zip",
+  "record_count": 800,
+  "run_count": 200,
+  "sections": {
+    "coexpression": 200,
+    "epigenomic": 200,
+    "gwas": 200,
+    "homology": 200
+  },
+  "raw_returned_models": {
+    "deepseek-v4-flash": 800
+  },
+  "all_raw_ids_unique": true,
+  "all_raw_models_match_recorded": true,
+  "all_raw_ids_match_recorded": true,
+  "raw_provider_created_present": 800,
+  "client_start_present": 800,
+  "client_completion_present": 800,
+  "temperature_values": [
+    "0.1"
+  ],
+  "thinking_values": [
+    "disabled"
+  ],
+  "max_tokens_values": [
+    "4000"
+  ],
+  "limitations": [
+    "This manifest covers only the 200-run C2DP40 fixed-evidence stability experiment.",
+    "Client start/completion times are not provider-returned timestamps; raw_api_created is provider-returned.",
+    "Only explicitly recorded request parameters are listed; unspecified provider defaults cannot be reconstructed.",
+    "Knowledge cutoff and context-window size are not in the archived response payload."
+  ]
+}
