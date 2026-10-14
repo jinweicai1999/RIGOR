@@ -5,6 +5,9 @@
 secrets.json
 config.local.*
 credentials*
+.streamlit/secrets.toml
+*.pem
+*.p12
 
 # python
 __pycache__/
@@ -16,5 +19,7 @@ venv/
 
 # local data / heavy artefacts
 data/cache/
+/data/
+/deliverables/
 *.log
 .DS_Store

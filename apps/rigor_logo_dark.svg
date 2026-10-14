@@ -1,0 +1,25 @@
+<svg width="960" height="260" viewBox="0 0 960 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(54 54)">
+    <circle cx="76" cy="76" r="70" fill="url(#g1)"/>
+    <path d="M38 86C58 55 85 44 121 48C102 61 89 76 80 100C63 110 51 107 38 86Z" fill="#FFFFFF"/>
+    <circle cx="111" cy="54" r="10" fill="#FFFFFF"/>
+    <path d="M24 116C39 127 56 132 78 132C67 149 52 158 35 160C24 146 18 132 24 116Z" fill="url(#g2)"/>
+  </g>
+
+  <g transform="translate(196 66)">
+    <text x="0" y="66" font-family="Avenir Next, Montserrat, Poppins, sans-serif" font-size="88" font-weight="800" fill="#CBD5E1" letter-spacing="3">RIGOR</text>
+    <text x="2" y="114" font-family="Avenir Next, Inter, sans-serif" font-size="26" font-weight="500" fill="#94A3B8" letter-spacing="0.8">Rice Integrative Gene functiOn Reasoner</text>
+    <rect x="2" y="138" width="550" height="8" rx="4" fill="url(#g1)"/>
+  </g>
+</svg>
