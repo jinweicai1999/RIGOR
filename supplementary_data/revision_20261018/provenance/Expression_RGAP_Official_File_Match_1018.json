@@ -1,0 +1,16 @@
+{
+  "resource": "RGAP/MSU rice expression matrix, Release 7",
+  "official_url": "https://rice.uga.edu/osa1r7_download/osa1_r7.all_models.gene_exp_matrix.xlsx",
+  "official_expression_page": "https://rice.uga.edu/expression.shtml",
+  "local_relative_path": "expression/osa1_r7.all_models.gene_exp_matrix.xlsx",
+  "verification_date": "2026-10-18",
+  "official_sha256": "bc8c2e263d44c564ce60737aa2d4fe91fcefdfcd137cf796d6c2e1cbc3e0fff8",
+  "local_sha256": "bc8c2e263d44c564ce60737aa2d4fe91fcefdfcd137cf796d6c2e1cbc3e0fff8",
+  "exact_byte_match": true,
+  "bytes": 41626294,
+  "expression_sample_columns": 80,
+  "workbook_embedded_created": "2024-08-28T18:41:36",
+  "workbook_embedded_modified": "2024-08-28T18:43:49",
+  "original_download_date": "Not retained in the available records",
+  "date_interpretation": "The verification date and embedded document dates are not the original project download date."
+}

@@ -1,0 +1,46 @@
+{
+  "metadata_date": "2026-10-18",
+  "archive_integrity": [
+    {
+      "file": "03_same_evidence_comparison/C2DP40_fixed_evidence_comparison.docx",
+      "members": 17,
+      "crc_ok": true
+    },
+    {
+      "file": "04_stability/Data_archive_200runs.zip",
+      "members": 1430,
+      "crc_ok": true
+    },
+    {
+      "file": "01_baselines/model_outputs_and_api338.zip",
+      "members": 705,
+      "crc_ok": true
+    }
+  ],
+  "row_counts": {
+    "01_baselines/per_gene_scores.csv": 104,
+    "08_api_manifest/api_338call_manifest.csv": 338,
+    "04_stability/api_800call_manifest.csv": 800,
+    "05_free_recall/per_gene_answers_and_adjudication.csv": 26
+  },
+  "credential_pattern_candidates": [],
+  "original_source_records": 338,
+  "stability_source_records": 800,
+  "free_recall_records": 26,
+  "historical_access_dates_status": "Not retained in the available records",
+  "public_upload_performed": false,
+  "portable_score_replay": {
+    "verified_rows": 104,
+    "component_or_score_mismatches": 0,
+    "means": {
+      "full_rigor": 80.82307692307693,
+      "annotation_go_interpro": 74.37692307692308,
+      "pre_cutoff_literature_only": 74.33076923076922,
+      "deterministic_no_llm": 63.48461538461538
+    }
+  },
+  "scope": "Existing baseline outputs, statistics, API archives, and retained provenance. This is not a claim that every manuscript data/source issue is resolved.",
+  "final_zip_file_count": 37,
+  "final_zip_sha256": "53fd4fc174a6171898b241666132cfbef3a93954b02953a141a6f924771fdf66",
+  "final_zip_bytes": 11431413
+}

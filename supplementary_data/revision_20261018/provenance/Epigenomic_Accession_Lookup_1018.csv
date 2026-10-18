@@ -1,0 +1,19 @@
+﻿local_relative_path,sra_run_accession,source_basis,original_access_date
+epigenomics/chromatin_accessibility/SRR1043695_MNase-Seq_seedlings.bed,SRR1043695,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/chromatin_accessibility/SRR5748741_ATAC-Seq_leaves.bed,SRR5748741,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/chromatin_accessibility/SRR7126116_ATAC-Seq_Panicles.bed,SRR7126116,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/chromatin_accessibility/SRR8763791_ATAC-Seq_Roots.bed,SRR8763791,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR094790_H3K4me2_seedlings.bed,SRR094790,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR094791_H3K36me3_seedlings.bed,SRR094791,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR1999337_H3K4me3_SAM.bed,SRR1999337,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR1999338_H3K27me3_SAM.bed,SRR1999338,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR2046532_H3K23ac_leaves.bed,SRR2046532,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR2046533_H4K16ac_leaves.bed,SRR2046533,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR3213598_H3K9me1_seedlings.bed,SRR3213598,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR3213599_H3K4ac_seedlings.bed,SRR3213599,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR6510886_H4K12ac_seedlings.bed,SRR6510886,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR6510897_H3K9ac_Roots.bed,SRR6510897,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR6795643_H3K9ac_seedlings.bed,SRR6795643,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR7126124_H3K4me2_Panicles.bed,SRR7126124,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR7126129_H3K9ac_Panicles.bed,SRR7126129,Accession retained in local BED filename; processing release not recorded,Not retained in the available records
+epigenomics/histone_modification/SRR9659468_H3K36me3_leaves.bed,SRR9659468,Accession retained in local BED filename; processing release not recorded,Not retained in the available records

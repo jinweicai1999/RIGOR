@@ -31,7 +31,8 @@ auditable text and source locations are exported in `prompts/runtime_prompt_temp
 > resources used at inference time are large reference files assembled from third-party sources
 > (RAP-DB/RGAP, RGAP expression, eRice/RiceENCODE chromatin data, published GWAS summary
 > statistics). They are not redistributed here. The supplementary methods describe their
-> scientific sources; a file-level provenance and checksum table is being prepared separately.
+> scientific sources; the retained file-level provenance and checksum tables are provided in
+> [the 2026-10-18 revision package](supplementary_data/revision_20261018/README.md).
 
 ## Local setup
 
@@ -42,6 +43,12 @@ in the repository. Without the local evidence bundle, the source alone does not 
 the complete inference outputs.
 
 ## Supplementary data
+
+The [2026-10-18 revision package](supplementary_data/revision_20261018/README.md) provides
+the archived 26-gene outputs and 338 original benchmark API responses, the complete
+200-run/800-call stability archive, baseline scores and a portable scoring replay,
+26 evidence-free recall records, response figures, and retained provenance lookup tables.
+It records unresolved original access dates and GWAS population mappings explicitly.
 
 | File | Contents |
 |---|---|
@@ -54,7 +61,8 @@ the complete inference outputs.
 
 The frozen evidence snapshot, populated prompts, all 200 complete model outputs, the
 raw 800 API-response records, and per-file SHA-256 hashes are retained in the separate
-`Data_archive_200runs.zip` revision archive. This archive is not part of the source tree above.
+`Data_archive_200runs.zip` revision archive. This archive is now included inside the
+[downloadable revision package](supplementary_data/revision_20261018/RIGOR_revision_data_20261018.zip).
 The included table can be regenerated with `scripts/flatten_200run_api_audit.py` from that
 archive. It covers the 200-run stability experiment only, not every API call across the
 26-gene benchmark or ablation analyses. Parameters not explicitly recorded in the archive
