@@ -30,10 +30,14 @@ outstanding manuscript revisions. The existing application code is unchanged.
 - [Provenance audit](provenance/Provenance_Audit_1018.json)
 
 The 244 retained files include supporting and derived artifacts; they are not 244
-independent evidence inputs. Original download/access dates were not retained in the
-available records. The metadata-verification date is not substituted for those dates.
-Some exact upstream releases and the per-trait mapping to the cited GWAS populations
-remain unresolved. Embedded workbook dates and local index-build times are not download
+independent evidence inputs. The author reports source download dates of 2026-04-10 for annotation, expression,
+co-expression and promoter-epigenomic resources, and 2026-04-16 for GWAS association
+files. No independent download log was recovered; this reporting basis is explicit in
+the lookup. Creation/copy timestamps, index-build dates and verification dates remain separate.
+The three core RAP-DB GFFs exactly match the official 2025-03-19 release. Some support-
+file releases and the per-trait local-file mapping to the original GWAS populations
+remain unresolved; official RiceVarMap catalog candidates are listed without claiming
+that they identify the local files. Embedded workbook dates and local index-build times are not download
 dates. A current file hash alone does not establish its identity with every historical
 benchmark input.
 
@@ -43,10 +47,10 @@ reconstruct the original project download date.
 
 ## Checks and replay
 
-The complete archive is 11,431,413 bytes. SHA-256:
+The complete archive is 11,437,917 bytes. SHA-256:
 
 ```text
-53fd4fc174a6171898b241666132cfbef3a93954b02953a141a6f924771fdf66
+be0af11536d24b6b1d9c0044530355a4f0110f991262234c976ff8cb9e258cc9
 ```
 
 After extracting the archive, run:
@@ -57,7 +61,7 @@ python3 RIGOR_revision_data_20261018/01_baselines/reproduce_alignment.py
 
 This standard-library-only replay compares all 104 baseline scores and their component
 scores with the included table. The retained check reports zero mismatches. It does not
-contact a model provider. `MANIFEST_SHA256.csv` inside the archive covers all other 36
+contact a model provider. `MANIFEST_SHA256.csv` inside the archive covers all other 40
 packaged files. See the [packaging-check record](packaging_audit_20261018.json).
 
 The packaging audit records the state before publication; its upload-status field is
@@ -66,3 +70,9 @@ scan passed, but such checks are not a guarantee of scientific validity or absol
 security. Scoring results measure retrospective text/evidence alignment, not genome-wide
 prediction accuracy. The deferred 26-gene prior-literature audit and wet-lab documentation
 are not presented here as completed.
+
+## Source-date correction
+
+[Official release/download ordering checks](provenance/Resource_Release_and_Download_Check_1018.csv) · [Author-reported dates and scope](provenance/Download_Date_Author_Confirmation_1018.json) · [RAP-DB archive identity checks](provenance/Official_Resource_Identity_Checks_1018.json) · [GWAS portal/local spot checks](provenance/GWAS_Portal_Local_Spot_Check_1018.csv)
+
+This correction changes provenance metadata only; analysis outputs, scoring scripts, and raw API records are unchanged. Resource-publication dates are not silently substituted for exact processed-file build dates.

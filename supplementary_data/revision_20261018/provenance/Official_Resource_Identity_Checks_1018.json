@@ -1,0 +1,136 @@
+[
+  {
+    "resource": "RiceVarMap phenotype/GWAS query",
+    "url": "https://ricevarmap.ncpgr.cn/v3/phenos/",
+    "query": {
+      "module": "gwas",
+      "gwas_study": "xie_2015_pnas",
+      "ph_name": "Grain_thickness",
+      "pop": "All"
+    },
+    "tables": [
+      {
+        "id": "gwas_table",
+        "rows": 23,
+        "header": [
+          "Variation ID",
+          "Variation ID V6",
+          "Chromosome",
+          "Position",
+          "LR  P -value",
+          "LMM  P -value"
+        ],
+        "sample_rows": [
+          [
+            "vg0523498004",
+            "sf0523435425",
+            "5",
+            "23498004",
+            "8.88E-46",
+            "2.51E-10"
+          ],
+          [
+            "vg0516380042",
+            "sf0516322524",
+            "5",
+            "16380042",
+            "5.83E-44",
+            "NA"
+          ]
+        ]
+      }
+    ],
+    "download_links": [
+      {
+        "href": "/v3/download/",
+        "label": "Data Downloads"
+      },
+      {
+        "href": "#gwas-module",
+        "label": "GWAS Results"
+      }
+    ]
+  },
+  {
+    "resource": "RAP-DB",
+    "date": "2025-03-19",
+    "kind": "mapping",
+    "url": "https://rapdb.dna.naro.go.jp/download/archive/irgsp1/RAP-MSU_2025-03-19.txt.gz",
+    "error_type": "HTTPError",
+    "http_status": 404
+  },
+  {
+    "resource": "RAP-DB",
+    "date": "2026-02-05",
+    "kind": "mapping",
+    "url": "https://rapdb.dna.naro.go.jp/download/archive/irgsp1/RAP-MSU_2026-02-05.txt.gz",
+    "error_type": "HTTPError",
+    "http_status": 404
+  },
+  {
+    "resource": "GEO_GSE316765_metadata",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316765&targ=self&form=text&view=full",
+    "bytes": 3732,
+    "content_sha256": "2c001fb4f396e866a354a8a7bc03b29e605faf51cacf6d7d4ee901d7582791be"
+  },
+  {
+    "resource": "RAP-DB",
+    "date": "2026-02-05",
+    "kind": "gff",
+    "url": "https://rapdb.dna.naro.go.jp/download/archive/irgsp1/IRGSP-1.0_representative_2026-02-05.tar.gz",
+    "bytes": 15521213,
+    "member_checks": [
+      {
+        "name": "locus.gff",
+        "official_sha256": "361467c62cf05a441459ab8840c0e55421bdff3d6cd673ccb9158a4769435444",
+        "local_sha256": "349ce5b5f54248f38e6f75d8b8734b575637cca3aa885558d61f321d745739e6",
+        "exact_match": false
+      },
+      {
+        "name": "transcripts.gff",
+        "official_sha256": "44d409dac2f1ef17598b35d61425836410f625b0c6e39b0846a5f3255cf6d3be",
+        "local_sha256": "95286e598178ea06c17ee23484033a6ed73a7d23494610d28530402c5c1ea367",
+        "exact_match": false
+      },
+      {
+        "name": "transcripts_exon.gff",
+        "official_sha256": "1c0aa146f17cdf794ba87f11ac63e8fe868be2dcc329583b01aa4f9e87db3af1",
+        "local_sha256": "0f3ea96c8de973604d166b732673dce3d29de4c5de74e0155c6f5d5c4d83acc8",
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "resource": "RAP-DB",
+    "date": "2025-03-19",
+    "kind": "gff",
+    "url": "https://rapdb.dna.naro.go.jp/download/archive/irgsp1/IRGSP-1.0_representative_2025-03-19.tar.gz",
+    "bytes": 16279411,
+    "member_checks": [
+      {
+        "name": "locus.gff",
+        "official_sha256": "349ce5b5f54248f38e6f75d8b8734b575637cca3aa885558d61f321d745739e6",
+        "local_sha256": "349ce5b5f54248f38e6f75d8b8734b575637cca3aa885558d61f321d745739e6",
+        "exact_match": true
+      },
+      {
+        "name": "transcripts.gff",
+        "official_sha256": "95286e598178ea06c17ee23484033a6ed73a7d23494610d28530402c5c1ea367",
+        "local_sha256": "95286e598178ea06c17ee23484033a6ed73a7d23494610d28530402c5c1ea367",
+        "exact_match": true
+      },
+      {
+        "name": "transcripts_exon.gff",
+        "official_sha256": "0f3ea96c8de973604d166b732673dce3d29de4c5de74e0155c6f5d5c4d83acc8",
+        "local_sha256": "0f3ea96c8de973604d166b732673dce3d29de4c5de74e0155c6f5d5c4d83acc8",
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "resource": "GGM_Figshare_metadata",
+    "url": "https://api.figshare.com/v2/articles/20072177",
+    "bytes": 2902,
+    "content_sha256": "527e957dad49619af068f32d763f7019f8a5c0907d5da33267abf3b80b691e1b"
+  }
+]

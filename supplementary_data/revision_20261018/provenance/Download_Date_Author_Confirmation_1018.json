@@ -1,0 +1,14 @@
+{
+  "recorded_on": "2026-10-18",
+  "date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log",
+  "download_dates_by_layer": {
+    "local_annotation": "2026-04-10",
+    "expression": "2026-04-10",
+    "coexpression_and_modules": "2026-04-10",
+    "promoter_epigenomics": "2026-04-10",
+    "gwas": "2026-04-16"
+  },
+  "scope": "GWAS date refers to original association files, not the locally generated Parquet index. Other dates refer to source acquisition as reported by the author.",
+  "replaces_earlier_ambiguous_gwas_date": "Latest author statement specifies 2026-04-16; index build remains 2026-04-30.",
+  "independent_log_recovery": false
+}

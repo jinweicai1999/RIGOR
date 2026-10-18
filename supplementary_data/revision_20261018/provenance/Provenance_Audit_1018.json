@@ -23,80 +23,85 @@
   },
   "distinct_epigenomic_accessions": 18,
   "remaining_unrecoverable_from_retained_records": [
-    "Original download/access dates for the local resource bundle",
-    "Exact upstream release dates for resources without retained version metadata",
-    "Per-trait mapping to the originally cited GWAS source populations"
+    "Exact versions of some support files and processed epigenomic BEDs",
+    "File-level assignment of local GWAS summaries to the original study/population; official catalog candidates are not exact source-file matches",
+    "Independent original download logs; supplied dates are author-reported"
   ],
   "scope": "No new model calls or biological analyses. No changes to the manuscript or supplemental methods. The 26-gene prior-literature audit is deferred as instructed.",
   "layers": [
     {
       "evidence_layer": "local_annotation",
-      "retained_file_count": 9,
+      "retained_file_count": "9",
       "source_or_provider": "RAP-DB representative annotation and RAP–MSU mapping",
       "source_url_or_citation": "https://rapdb.dna.affrc.go.jp/download/irgsp1.html",
-      "version_or_release": "IRGSP-1.0 reference/representative annotation; exact annotation release timestamp not retained",
-      "build_date_or_version_evidence": "Exact upstream annotation build date not retained",
-      "original_access_date": "Not retained in the available records",
+      "version_or_release": "Core three RAP-DB GFFs exactly match IRGSP-1.0 representative release 2025-03-19; other support-file versions listed individually",
+      "build_date_or_version_evidence": "2025-03-19 official GFF archive label, independently confirmed by SHA-256",
+      "original_access_date": "2026-04-10",
       "metadata_verification_date": "2026-10-18",
-      "verification_basis": "Local GFF column 2 records irgsp1_locus / irgsp1_rep; RAP and MSU identifiers are retained.",
-      "status": "Reference-build label verified from local content; release date unresolved",
-      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)"
+      "verification_basis": "Official archive member hashes; distinct from the author-reported download date",
+      "status": "Core GFF release identified; support-file release gaps remain",
+      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
+      "original_access_date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log"
     },
     {
       "evidence_layer": "coexpression_and_modules",
-      "retained_file_count": 3,
+      "retained_file_count": "3",
       "source_or_provider": "Zhang et al. (2022), Plant Physiology 190:1526–1542; precomputed network/module resources",
       "source_url_or_citation": "https://doi.org/10.1093/plphys/kiac339",
       "version_or_release": "2022 published GGM resource; original study reports 8,456 RNA-seq runs collected through June 2021",
-      "build_date_or_version_evidence": "Publication version 2022-07-22; exact local conversion/build date not retained",
-      "original_access_date": "Not retained in the available records",
+      "build_date_or_version_evidence": "Linked Figshare expression-matrix v1 public 2022-07-11; network paper online 2022-07-22",
+      "original_access_date": "2026-04-10",
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "Published resource and local table schema; exact original-to-local conversion history is not retained.",
-      "status": "Study version identified; original download/conversion log unresolved",
-      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)"
+      "status": "Published resource identified; local conversion history not independently recovered",
+      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
+      "original_access_date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log"
     },
     {
       "evidence_layer": "expression",
-      "retained_file_count": 2,
+      "retained_file_count": "2",
       "source_or_provider": "Rice Genome Annotation Project (RGAP/MSU) expression resource",
       "source_url_or_citation": "https://rice.uga.edu/osa1r7_download/osa1_r7.all_models.gene_exp_matrix.xlsx",
       "version_or_release": "Release 7 expression matrix, 2024 website update; local XLSX exactly matches the official downloadable XLSX",
-      "build_date_or_version_evidence": "Embedded XLSX creation: 2024-08-28; not an original download timestamp",
-      "original_access_date": "Not retained in the available records",
+      "build_date_or_version_evidence": "Official expression update 2024-09-03; embedded XLSX creation 2024-08-28",
+      "original_access_date": "2026-04-10",
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "Official and local SHA-256 match; 80 sample columns; embedded XLSX creation metadata 2024-08-28.",
-      "status": "Exact official-file identity verified on 2026-10-18; original access date not retained",
-      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)"
+      "status": "Official-file identity verified; source download date author-reported",
+      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
+      "original_access_date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log"
     },
     {
       "evidence_layer": "promoter_epigenomics",
-      "retained_file_count": 45,
+      "retained_file_count": "45",
       "source_or_provider": "Packaged accessibility/histone BED resources; eRice and RiceENCODE cited in the manuscript",
       "source_url_or_citation": "Reported resource citations: Zhang et al. 2020 (eRice); Xie et al. 2021 (RiceENCODE)",
       "version_or_release": "45 retained BED files; 18 distinct SRA run accessions occur in file names; processed BED release not retained",
-      "build_date_or_version_evidence": "Not retained in the available records",
-      "original_access_date": "Not retained in the available records",
+      "build_date_or_version_evidence": "eRice resource paper online 2020-01-27; RiceENCODE resource paper online 2021-08-27; exact local processed-BED release not retained",
+      "original_access_date": "2026-04-10",
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "BED file names, mark/tissue labels and run accessions; full processed-file-to-upstream-release mapping unresolved.",
-      "status": "File and accession lookup supplied; exact processing release/access date unresolved",
-      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)"
+      "status": "Cited resources publicly available before author-reported download; BED build identity remains unresolved",
+      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
+      "original_access_date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log"
     },
     {
       "evidence_layer": "gwas",
-      "retained_file_count": 132,
+      "retained_file_count": "132",
       "source_or_provider": "Local precomputed PLINK association summaries and derived per-chromosome index",
       "source_url_or_citation": "Reported citations: doi:10.1038/ncomms6087; doi:10.1038/s41586-018-0063-9",
       "version_or_release": "10 trait summary files; Parquet index_version=1; source-population mapping not retained",
       "build_date_or_version_evidence": "Local index created 2026-04-30 14:23:22; not an upstream data release or download date",
-      "original_access_date": "Not retained in the available records",
+      "original_access_date": "2026-04-16",
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "PLINK headers and index metadata; citations to Yang et al. 2014 and Wang et al. 2018 do not identify each local trait population.",
-      "status": "Trait-wise background and local index version verified; upstream population/version/access unresolved",
-      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)"
+      "status": "Source association-file download 2026-04-16 author-reported; local index built 2026-04-30; catalog candidates identified, local source-population identity not established",
+      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
+      "original_access_date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log"
     },
     {
       "evidence_layer": "ncrna",
-      "retained_file_count": 27,
+      "retained_file_count": "27",
       "source_or_provider": "Mixed local ncRNA inputs: NONCODE, miRBase-labelled sequences, RNAcentral-labelled GFF and local derived collections",
       "source_url_or_citation": "https://www.noncode.org/ ; https://www.mirbase.org/ ; https://rnacentral.org/",
       "version_or_release": "NONCODEv6 label retained; miRBase MIMAT and RNAcentral URS namespaces retained; other exact releases not retained",
@@ -105,11 +110,12 @@
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "File names, FASTA identifiers and GFF source/attributes; file-level annotations supplied below.",
       "status": "Available version/identifier labels transcribed; not used to claim validated ncRNA prediction accuracy",
-      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)"
+      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
+      "original_access_date_basis": "Not available / not applicable"
     },
     {
       "evidence_layer": "other_or_derived",
-      "retained_file_count": 26,
+      "retained_file_count": "26",
       "source_or_provider": "Local documentation, cache or derived analysis outputs",
       "source_url_or_citation": "Not applicable",
       "version_or_release": "Local artifacts rather than an independent upstream evidence layer",
@@ -118,7 +124,8 @@
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "File role inferred from documented paths and file types.",
       "status": "Distinguished from primary evidence inputs",
-      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)"
+      "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
+      "original_access_date_basis": "Not available / not applicable"
     },
     {
       "evidence_layer": "pubmed",
@@ -131,11 +138,12 @@
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "Frozen input/output archives; source membership and citation records",
       "status": "Archived snapshot identity distinct from live PubMed or model knowledge cutoff",
-      "checksum_lookup": "Original benchmark and 200-run archive manifests"
+      "checksum_lookup": "Original benchmark and 200-run archive manifests",
+      "original_access_date_basis": "Not available / not applicable"
     },
     {
       "evidence_layer": "optional_uniprot_interpro_live",
-      "retained_file_count": 0,
+      "retained_file_count": "0",
       "source_or_provider": "Optional UniProt and InterPro APIs",
       "source_url_or_citation": "https://www.uniprot.org/ ; https://www.ebi.ac.uk/interpro/",
       "version_or_release": "Live enrichment disabled with PUBMED_MAX_DATE in time-split runs",
@@ -144,7 +152,50 @@
       "metadata_verification_date": "2026-10-18",
       "verification_basis": "Submitted cutoff path; protein-domain evidence comes from packaged local annotation",
       "status": "No fictitious API release/access date assigned",
-      "checksum_lookup": "Packaged annotation hashes listed above"
+      "checksum_lookup": "Packaged annotation hashes listed above",
+      "original_access_date_basis": "Not available / not applicable"
     }
-  ]
+  ],
+  "download_date_author_confirmation": {
+    "recorded_on": "2026-10-18",
+    "date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log",
+    "download_dates_by_layer": {
+      "local_annotation": "2026-04-10",
+      "expression": "2026-04-10",
+      "coexpression_and_modules": "2026-04-10",
+      "promoter_epigenomics": "2026-04-10",
+      "gwas": "2026-04-16"
+    },
+    "scope": "GWAS date refers to original association files, not the locally generated Parquet index. Other dates refer to source acquisition as reported by the author.",
+    "replaces_earlier_ambiguous_gwas_date": "Latest author statement specifies 2026-04-16; index build remains 2026-04-30.",
+    "independent_log_recovery": false
+  },
+  "resource_release_check_file": "Resource_Release_and_Download_Check_1018.csv",
+  "rap_core_gff_exact_release_identity": {
+    "resource": "RAP-DB",
+    "date": "2025-03-19",
+    "kind": "gff",
+    "url": "https://rapdb.dna.naro.go.jp/download/archive/irgsp1/IRGSP-1.0_representative_2025-03-19.tar.gz",
+    "bytes": 16279411,
+    "member_checks": [
+      {
+        "name": "locus.gff",
+        "official_sha256": "349ce5b5f54248f38e6f75d8b8734b575637cca3aa885558d61f321d745739e6",
+        "local_sha256": "349ce5b5f54248f38e6f75d8b8734b575637cca3aa885558d61f321d745739e6",
+        "exact_match": true
+      },
+      {
+        "name": "transcripts.gff",
+        "official_sha256": "95286e598178ea06c17ee23484033a6ed73a7d23494610d28530402c5c1ea367",
+        "local_sha256": "95286e598178ea06c17ee23484033a6ed73a7d23494610d28530402c5c1ea367",
+        "exact_match": true
+      },
+      {
+        "name": "transcripts_exon.gff",
+        "official_sha256": "0f3ea96c8de973604d166b732673dce3d29de4c5de74e0155c6f5d5c4d83acc8",
+        "local_sha256": "0f3ea96c8de973604d166b732673dce3d29de4c5de74e0155c6f5d5c4d83acc8",
+        "exact_match": true
+      }
+    ]
+  }
 }
