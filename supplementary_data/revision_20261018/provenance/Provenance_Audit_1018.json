@@ -23,9 +23,9 @@
   },
   "distinct_epigenomic_accessions": 18,
   "remaining_unrecoverable_from_retained_records": [
-    "Exact versions of some support files and processed epigenomic BEDs",
-    "File-level assignment of local GWAS summaries to the original study/population; official catalog candidates are not exact source-file matches",
-    "Independent original download logs; supplied dates are author-reported"
+    "Exact upstream revisions of some support files and processed epigenomic BEDs; retained local snapshots are identified by dates/accessions/hashes",
+    "Independent original download logs; supplied download dates are author-reported",
+    "Historical PLINK version/complete command; source-panel and additive OLS identity are supported by bounded numerical reconstruction, not a genome-wide rerun"
   ],
   "scope": "No new model calls or biological analyses. No changes to the manuscript or supplemental methods. The 26-gene prior-literature audit is deferred as instructed.",
   "layers": [
@@ -76,26 +76,26 @@
       "retained_file_count": "45",
       "source_or_provider": "Packaged accessibility/histone BED resources; eRice and RiceENCODE cited in the manuscript",
       "source_url_or_citation": "Reported resource citations: Zhang et al. 2020 (eRice); Xie et al. 2021 (RiceENCODE)",
-      "version_or_release": "45 retained BED files; 18 distinct SRA run accessions occur in file names; processed BED release not retained",
-      "build_date_or_version_evidence": "eRice resource paper online 2020-01-27; RiceENCODE resource paper online 2021-08-27; exact local processed-BED release not retained",
+      "version_or_release": "eRice (Zhang et al. 2020) / RiceENCODE (Xie et al. 2021); local snapshot acquired 2026-04-10",
+      "build_date_or_version_evidence": "RiceENCODE resource paper online 2021-08-27; eRice paper online 2020-01-27; retained snapshot acquisition 2026-04-10",
       "original_access_date": "2026-04-10",
-      "metadata_verification_date": "2026-10-18",
-      "verification_basis": "BED file names, mark/tissue labels and run accessions; full processed-file-to-upstream-release mapping unresolved.",
-      "status": "Cited resources publicly available before author-reported download; BED build identity remains unresolved",
+      "metadata_verification_date": "2026-10-19",
+      "verification_basis": "Retained local snapshot acquired 2026-04-10 (author-reported); file identity fixed by per-file SHA-256, not an asserted upstream 2021 release number; 45 retained BEDs, 18 distinct SRA run identifiers in names. Exact upstream BED revision not independently identified.",
+      "status": "Reproducible local snapshot identified by dated file/accession/hash lookup; upstream processed-BED release number not asserted",
       "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
       "original_access_date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log"
     },
     {
       "evidence_layer": "gwas",
       "retained_file_count": "132",
-      "source_or_provider": "Local precomputed PLINK association summaries and derived per-chromosome index",
-      "source_url_or_citation": "Reported citations: doi:10.1038/ncomms6087; doi:10.1038/s41586-018-0063-9",
-      "version_or_release": "10 trait summary files; Parquet index_version=1; source-population mapping not retained",
+      "source_or_provider": "RiceVarMap public 529-accession panel; Xie et al. 2015",
+      "source_url_or_citation": "https://doi.org/10.1073/pnas.1515919112 ; https://ricevarmap.ncpgr.cn/media/Phenos/phenos.csv",
+      "version_or_release": "10 local additive-linear trait summaries, source acquisition 2026-04-16; derived index v1",
       "build_date_or_version_evidence": "Local index created 2026-04-30 14:23:22; not an upstream data release or download date",
       "original_access_date": "2026-04-16",
-      "metadata_verification_date": "2026-10-18",
-      "verification_basis": "PLINK headers and index metadata; citations to Yang et al. 2014 and Wang et al. 2018 do not identify each local trait population.",
-      "status": "Source association-file download 2026-04-16 author-reported; local index built 2026-04-30; catalog candidates identified, local source-population identity not established",
+      "metadata_verification_date": "2026-10-19",
+      "verification_basis": "Public phenotype/genotype numerical reconstruction: four SNPs for this trait match NMISS exactly and BETA/STAT/P at the four-significant-digit local output precision; 40/40 checks across ten traits. See GWAS_Source_Reconstruction_40_checks_1019.csv.",
+      "status": "Source panel identified by bounded reconstruction; trait-specific phenotype counts and P-value backgrounds supplied; original source software command/version not recovered",
       "checksum_lookup": "Evidence_File_Provenance_SHA256_1018.csv (per-file SHA-256)",
       "original_access_date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log"
     },
@@ -196,6 +196,62 @@
         "local_sha256": "0f3ea96c8de973604d166b732673dce3d29de4c5de74e0155c6f5d5c4d83acc8",
         "exact_match": true
       }
+    ]
+  },
+  "gwas_source_reconstruction": {
+    "verification_date": "2026-10-19",
+    "purpose": "Source/population identification using a bounded numerical fingerprint; not a full GWAS reproduction",
+    "phenotype_source_url": "https://ricevarmap.ncpgr.cn/media/Phenos/phenos.csv",
+    "genotype_source_url": "https://ricevarmap.ncpgr.cn/v3/vars_genotype/",
+    "phenotype_source_sha256": "61cb38ba6c75bab94d7aae26d25d49751210cfed23227b774ad2dc75dd8e32ff",
+    "genotype_table_sha256": "05a18dae9c0f762d7145ded01612ab3eb7454e9ba77efcd8cc402844215af27d",
+    "panel_size": 529,
+    "study": "Xie et al. (2015), DOI 10.1073/pnas.1515919112",
+    "population": "All 529 accessions retained in the published 533-accession panel after exclusion of four accessions; not the combined 1479-accession panel or the 3K cohort",
+    "variants": [
+      "vg0100001151",
+      "vg0100001184",
+      "vg0311647322",
+      "vg0507081467"
+    ],
+    "traits": [
+      "Heading_date",
+      "Plant_height",
+      "Num_panicles",
+      "Num_effective_panicles",
+      "Yield",
+      "Grain_weight",
+      "Spikelet_length",
+      "Grain_length",
+      "Grain_width",
+      "Grain_thickness"
+    ],
+    "total_checks": 40,
+    "all_fields_matching_checks": 40,
+    "fields_checked": [
+      "NMISS",
+      "BETA",
+      "STAT",
+      "P"
+    ],
+    "precision": "Exact NMISS; BETA, STAT and P matched to the 4-significant-digit precision retained in the local PLINK output",
+    "reconstruction": "OLS with an intercept and additive 0/2 dosage for homozygous effect-allele counts; nonmissing imputed genotypes; phenotype -9 excluded; two-sided t test with n-2 degrees of freedom; no covariates",
+    "phenotype_nonmissing_counts": {
+      "Heading_date": 529,
+      "Plant_height": 528,
+      "Num_panicles": 522,
+      "Num_effective_panicles": 522,
+      "Yield": 522,
+      "Grain_weight": 521,
+      "Spikelet_length": 522,
+      "Grain_length": 525,
+      "Grain_width": 525,
+      "Grain_thickness": 525
+    },
+    "limitations": [
+      "Bounded fingerprint does not independently validate every SNP or recover the historical PLINK command/version.",
+      "Portal precomputed LR/LMM P-values are not the local unadjusted PLINK ADD output; a difference alone does not refute source-population identity.",
+      "One of five queried markers (vg0503927501) has deletion/multi-allelic display calls and was not recoded for reconstruction."
     ]
   }
 }

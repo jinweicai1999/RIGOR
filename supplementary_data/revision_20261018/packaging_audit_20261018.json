@@ -40,9 +40,9 @@
     }
   },
   "scope": "Existing baseline outputs, statistics, API archives, and retained provenance. This is not a claim that every manuscript data/source issue is resolved.",
-  "final_zip_file_count": 41,
-  "final_zip_sha256": "be0af11536d24b6b1d9c0044530355a4f0110f991262234c976ff8cb9e258cc9",
-  "final_zip_bytes": 11437917,
+  "final_zip_file_count": 48,
+  "final_zip_sha256": "72443aaa82272ff9a120439278f29dcf340ebd8b90233eab7844dcf57e353890",
+  "final_zip_bytes": 11476057,
   "metadata_revision": {
     "recorded_on": "2026-10-18",
     "date_basis": "Author-reported download date in project correspondence on 2026-10-18; not independently recovered from a download log",
@@ -57,5 +57,8 @@
     "replaces_earlier_ambiguous_gwas_date": "Latest author statement specifies 2026-04-16; index build remains 2026-04-30.",
     "independent_log_recovery": false
   },
-  "analysis_outputs_unchanged": true
+  "analysis_outputs_unchanged": true,
+  "final_manifest_file_count": 47,
+  "gwas_source_reconstruction_checks": 40,
+  "gwas_source_reconstruction_matches": 40
 }

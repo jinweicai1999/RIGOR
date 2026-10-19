@@ -1,0 +1,46 @@
+{
+  "url": "https://ricevarmap.ncpgr.cn/v3/vars_genotype/",
+  "phenotype_n": 529,
+  "genotype_accessions_requested": 529,
+  "variants": [
+    "vg0100001151",
+    "vg0100001184",
+    "vg0311647322",
+    "vg0503927501",
+    "vg0507081467"
+  ],
+  "response_bytes": 2379917,
+  "response_sha256": "4e4092cacbcb651236796beeab1662dcb758ea298d7ca6a8c84be8247f42a32e",
+  "tables": [
+    {
+      "id": "geno_table",
+      "rows": 1065,
+      "first_rows": [
+        [
+          "Variation ID",
+          "vg0100001151",
+          "vg0100001184",
+          "vg0311647322",
+          "vg0503927501",
+          "vg0507081467"
+        ],
+        [
+          "Chromosome",
+          "chr01",
+          "chr01",
+          "chr03",
+          "chr05",
+          "chr05"
+        ],
+        [
+          "Position",
+          "1151",
+          "1184",
+          "11647322",
+          "3927501",
+          "7081467"
+        ]
+      ]
+    }
+  ]
+}

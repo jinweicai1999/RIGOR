@@ -1,0 +1,56 @@
+{
+  "verification_date": "2026-10-19",
+  "purpose": "Source/population identification using a bounded numerical fingerprint; not a full GWAS reproduction",
+  "phenotype_source_url": "https://ricevarmap.ncpgr.cn/media/Phenos/phenos.csv",
+  "genotype_source_url": "https://ricevarmap.ncpgr.cn/v3/vars_genotype/",
+  "phenotype_source_sha256": "61cb38ba6c75bab94d7aae26d25d49751210cfed23227b774ad2dc75dd8e32ff",
+  "genotype_table_sha256": "05a18dae9c0f762d7145ded01612ab3eb7454e9ba77efcd8cc402844215af27d",
+  "panel_size": 529,
+  "study": "Xie et al. (2015), DOI 10.1073/pnas.1515919112",
+  "population": "All 529 accessions retained in the published 533-accession panel after exclusion of four accessions; not the combined 1479-accession panel or the 3K cohort",
+  "variants": [
+    "vg0100001151",
+    "vg0100001184",
+    "vg0311647322",
+    "vg0507081467"
+  ],
+  "traits": [
+    "Heading_date",
+    "Plant_height",
+    "Num_panicles",
+    "Num_effective_panicles",
+    "Yield",
+    "Grain_weight",
+    "Spikelet_length",
+    "Grain_length",
+    "Grain_width",
+    "Grain_thickness"
+  ],
+  "total_checks": 40,
+  "all_fields_matching_checks": 40,
+  "fields_checked": [
+    "NMISS",
+    "BETA",
+    "STAT",
+    "P"
+  ],
+  "precision": "Exact NMISS; BETA, STAT and P matched to the 4-significant-digit precision retained in the local PLINK output",
+  "reconstruction": "OLS with an intercept and additive 0/2 dosage for homozygous effect-allele counts; nonmissing imputed genotypes; phenotype -9 excluded; two-sided t test with n-2 degrees of freedom; no covariates",
+  "phenotype_nonmissing_counts": {
+    "Heading_date": 529,
+    "Plant_height": 528,
+    "Num_panicles": 522,
+    "Num_effective_panicles": 522,
+    "Yield": 522,
+    "Grain_weight": 521,
+    "Spikelet_length": 522,
+    "Grain_length": 525,
+    "Grain_width": 525,
+    "Grain_thickness": 525
+  },
+  "limitations": [
+    "Bounded fingerprint does not independently validate every SNP or recover the historical PLINK command/version.",
+    "Portal precomputed LR/LMM P-values are not the local unadjusted PLINK ADD output; a difference alone does not refute source-population identity.",
+    "One of five queried markers (vg0503927501) has deletion/multi-allelic display calls and was not recoded for reconstruction."
+  ]
+}
