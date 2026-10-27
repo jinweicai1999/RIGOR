@@ -1,0 +1,11 @@
+condition,n,mean,sample_sd
+baseline_full_rigor,26,76.0702453089,16.9076761471
+baseline_annotation_go_interpro,26,56.1636439258,32.3011144451
+baseline_pre_cutoff_literature_only,26,65.3207140431,30.6565275016
+baseline_deterministic_no_llm,26,53.2338677171,30.7639878734
+standardized_standardized_full_evidence,26,75.4955298338,16.8186162043
+standardized_leave_one_dimension_out_homology_literature,26,62.7220015019,28.0330364288
+standardized_leave_one_dimension_out_annotation_domain_go,26,68.170785796,27.4350005287
+standardized_leave_one_dimension_out_co_expression,26,73.1407154319,20.1409466318
+standardized_leave_one_dimension_out_epigenomics,26,75.8881826721,19.4091445755
+standardized_leave_one_dimension_out_expression,26,72.7072653608,21.6728927309

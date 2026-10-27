@@ -1,0 +1,12 @@
+analysis,condition_a,condition_b,n_pairs,mean_a_minus_b,test,raw_p,BH_adjusted_p,BH_family
+baseline,full_rigor,annotation_go_interpro,26,19.906601383050656,two-sided within-gene label-swap permutation; reselect entries and recompute weights,0.00854,0.025620000000000004,six pairwise baseline contrasts
+baseline,full_rigor,pre_cutoff_literature_only,26,10.749531265835616,two-sided within-gene label-swap permutation; reselect entries and recompute weights,0.06333,0.094995,six pairwise baseline contrasts
+baseline,full_rigor,deterministic_no_llm,26,22.836377591812376,two-sided within-gene label-swap permutation; reselect entries and recompute weights,4e-05,0.00024000000000000003,six pairwise baseline contrasts
+baseline,annotation_go_interpro,pre_cutoff_literature_only,26,3.3958333333333335,two-sided within-gene label-swap permutation; reselect entries and recompute weights,0.43617,0.43617,six pairwise baseline contrasts
+baseline,annotation_go_interpro,deterministic_no_llm,26,5.220767020335986,two-sided within-gene label-swap permutation; reselect entries and recompute weights,0.12532,0.150384,six pairwise baseline contrasts
+baseline,pre_cutoff_literature_only,deterministic_no_llm,26,15.847905996902394,two-sided within-gene label-swap permutation; reselect entries and recompute weights,0.04558,0.09116,six pairwise baseline contrasts
+standardized_ablation,standardized_full_evidence,leave_one_dimension_out_homology_literature,26,12.773528331875337,two-sided exact random-sign signed-rank; exclude zero differences,0.013427734375,0.0341796875,five full versus ablation contrasts
+standardized_ablation,standardized_full_evidence,leave_one_dimension_out_annotation_domain_go,26,7.324744037832806,two-sided exact random-sign signed-rank; exclude zero differences,0.013671875,0.0341796875,five full versus ablation contrasts
+standardized_ablation,standardized_full_evidence,leave_one_dimension_out_co_expression,26,2.354814401915851,two-sided exact random-sign signed-rank; exclude zero differences,0.21875,0.3645833333333333,five full versus ablation contrasts
+standardized_ablation,standardized_full_evidence,leave_one_dimension_out_epigenomics,26,-0.3926528383050123,two-sided exact random-sign signed-rank; exclude zero differences,0.625,0.625,five full versus ablation contrasts
+standardized_ablation,standardized_full_evidence,leave_one_dimension_out_expression,26,2.788264473047082,two-sided exact random-sign signed-rank; exclude zero differences,0.4609375,0.576171875,five full versus ablation contrasts
